@@ -22,5 +22,7 @@ fclean : clean
 
 re : fclean all
 
+compile: ${NAME}
+		@gcc libftprintf.a main.c && ./a.out
 
 .PHONY: all clean fclean re .c.o
